@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>MSN jQuery Plugin</title>
+		<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="jquery.messengerStatus.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(document).messengerStatus({
+					checkInterval: 9000,
+					liveID: "A89AD105D6E86AD6",
+					statusBoxDuration: 3000,
+					displayPicture: "displayPicture.gif",
+					onStatusChange: function(details) {
+						//alert("ID: " + details.ID + "\n" + "Status: " + details.status + "\n" + "Status Text: " + details.statusText + "\n" + "Display Name: " + details.displayName + "\n" + "Icon URL: " + details.iconURL + "\n" + "Icon Width: " + details.iconWidth + "\n" + "Icon Height: " + details.iconHeight);
+					},
+					onStatusBoxClick: function(details) {
+						alert("ID: " + details.ID + "\n" + "Status: " + details.status + "\n" + "Status Text: " + details.statusText + "\n" + "Display Name: " + details.displayName + "\n" + "Icon URL: " + details.iconURL + "\n" + "Icon Width: " + details.iconWidth + "\n" + "Icon Height: " + details.iconHeight);
+					}
+				});
+			});
+		</script>
+		<div style="width:100%; text-align:right;">
+		<span id="result">&nbsp;</span><br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god<br />
+		The quick brown fox jumps over the lazy god
+		</div>
+	</body>
+</html>
